@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Navbar />
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue';
+import './css/index.css';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import './css/index.css';
+/* Add any additional styles here */
 </style>
+
+<!-- <template>
+  <div>
+    <Navbar />
+    <router-view />
+    
+    <div>
+      <ul>
+        <li v-for="repo in paginatedRepos" :key="repo.id">
+          {{ repo.name }}
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <button @click="prevPage" :disabled="currentPage === 1">Previous</button>
+        <span>Page {{ currentPage }} of {{ totalPages }}</span>
+        <button @click="nextPage" :disabled="currentPage === totalPages">Next</button>
+      </div>
+    </div>
+  </div>
+</template> -->
+

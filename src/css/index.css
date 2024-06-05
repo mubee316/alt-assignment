@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color:black; */
+        background-color: white; /* Blue color with 50% opacity */
+      
+      
+}
+
+/* .navbar{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:green;
+} */
+h1{
+    color: white;
+}
+.github-icon{
+    font-size: 3rem;
+    margin-right: 1rem;
+    margin-top: 15px;
+}
+.view-more{
+    color: green;
+    cursor: pointer;
+}
+.repo-container{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  /* gap: 20px; */
+    color: green;
+    gap: 20px;
+    margin: 10px;
+    /* color: white; */
+}
+.repo-card{
+    border: 5px solid;
+    text-align: center;
+    border-color: green;
+}
+/* :hover .repo-card{
+    background-color: rgba(0, 0, 255, 0.5);
+} */
+.view-more{
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid;
+    border-color: green;
+    width:50px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+
+}
+.view-more:hover{
+    background-color: hsl(120, 100%, 35%);
+}
+.view-more:active{
+    background-color: hsl(120, 100%, 45%);
+}
+.navbar{
+    text-align: center;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.repo-name{
+    color: green;
+    text-decoration: underline;
+}
